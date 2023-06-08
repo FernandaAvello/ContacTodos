@@ -1,0 +1,9 @@
+main {
+    padding: 5% 25%;
+}
+.form {
+    background-color: #3a469c;
+    border: 10px solid #0699d8;
+    color: white;
+    padding: 10%;
+}

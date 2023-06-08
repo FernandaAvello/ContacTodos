@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+  <!-- CSS -->
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <main>
+    <div class="form">
+      <form class="row g-3">
+        <h3>GUARDAR NUEVO CONTACTO</h3>
+        <h5>Llena los siguientes campos para guardar un nuevo contacto</h5>
+        <div class="col-md-12">
+          <label for="name" class="form-label">Nombre</label>
+          <input type="text" class="form-control" id="name" value="">
+        </div>
+        <div class="col-12">
+          <label for="lastName" class="form-label">Apellido</label>
+          <input type="text" class="form-control" id="lastName" value="">
+        </div>
+        <div class="col-12">
+          <label for="phone" class="form-label">Teléfono</label>
+          <input type="number" class="form-control" id="phone" value="">
+        </div>
+        <div class="col-md-12">
+          <label for="email" class="form-label">Correo</label>
+          <input type="email" class="form-control" id="email" value="">
+        </div>
+        <div class="col-md-12">
+          <label for="note" class="form-label">Nota</label>
+          <input type="text" class="form-control" id="note" value="">
+        </div>
+        <div class="col-12 mt-4">
+          <button type="button" class="btn btn-outline-light btn-lg" onclick="getFormData()">Guardar</button>
+        </div>
+      </form>
+    </div>
+
+    <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Contacto Guardado</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <small id="messageModal"></small>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Llamar</button>
+            <button type="button" class="btn btn-outline-primary">Enviar Correo</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+<script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/scripts.js"></script>
+</body>
+</html>
